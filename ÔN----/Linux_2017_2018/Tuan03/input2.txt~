@@ -1,0 +1,28 @@
+import java.util.Scanner;
+//Chuong trinh kiem tra Amstrong
+class AmstrongNumber {
+    //Kiem tra mot so n co la so Amstrong
+    private static boolean isAmstrongNumber(int n){
+	int sum = 0, term, k = n;
+	while(k>0) {
+	    term = k%10;
+	    sum += term*term*term;
+	    k = k/10;
+	}
+	return sum == n;
+
+    }
+    //Ham main
+    public static void main(String[] args) {
+	int n;
+	Scanner scan = new Scanner(System.in);
+
+	System.out.print("Nhap n: ");
+	n = scan.nextInt();
+	if(isAmstrongNumber(n))
+	    System.out.println("1");
+	else
+	    System.out.println("0");
+    }
+
+}

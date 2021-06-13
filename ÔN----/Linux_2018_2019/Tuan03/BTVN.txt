@@ -1,0 +1,16 @@
+Ho Ten: Vu Quang Luat
+MSSV: 16003422
+
+1.
+	- 0|([1-9][0-9]*)	tap cac so tu nhien
+	- 0(,)[0-9]*|[1-9]+[0-9]*	tap cac so thuc
+	- 0|5|([1-9][0-9]*[0|5])	tap cac so tu nhien chia het cho 5
+	- [1-9]([0-9][0-9])*[0|5] 	Tập các số tự nhiên chia hết cho 5 có độ dài chẵn
+	- ^T[.]*(this is an exercise)[.]*\1[.]*$	Tập các dòng bắt đầu bằng chữ cái ’T’ và chứa ít nhất 2 xâu "this is an
+exercise"
+	
+2.
+	- ls /etc | grep .*a.*a.* > output1.txt
+	- ls /etc | grep ^b([.*|^c])*
+4.
+	- ^([\<](meta)([\s][\d]*[\w]*)*[\>])([\d]*[\w]*)*([\<][\/](meta)[\>])$

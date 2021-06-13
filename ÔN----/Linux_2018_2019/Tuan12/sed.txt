@@ -1,0 +1,16 @@
+1i\
+Ket qua cau lenh SED
+2i\
+......................................
+s/A'bad/Aurangabad/g
+s/MH/Maharastra/g
+s/^$/============/
+/^Ha/p
+s/.*\([0-9]*8[0-9]*8[0-9]*8[0-9]*8[0-9]*\).*/\1/
+1,/4/p
+6c\
+Vu Luat 24/5/1997 Food 44444-578888 236 Khuong Dinh, Thanh Xuan, Ha Noi.
+8i\
+Tran Bac 5/5/1997 Food, Phan  5484694-45796 5/5, Khuong Dinh, Thanh Xuan, Ha Noi.
+9i\
+Le Vu 5/4/1998 Mi, Gai 45945-22222 265, Khuong Dinh, Thanh Xuan, Ha Noi

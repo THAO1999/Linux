@@ -1,0 +1,4 @@
+#!/bin/bash
+var;
+read -p "Nhap vao bien: " var;
+echo "gia tri bien var = $var"
