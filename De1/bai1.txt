@@ -1,0 +1,7 @@
+Nguyen_Thi_Lan	Nu	6	7	8
+Tran_Ngoc_Lan_Nhi	Nu	5	8.5	8
+Nguyen_Van_Cong	Nam	10	7	8
+Nguyen_Thi_Le	Nu	4	7	0
+Ha_Trung_Thuc	Nam	3	8	9
+Vu_Thuy_Ngat	Nu	8	9	7
+Tran_Chi_Trung	Nam	9	5	0

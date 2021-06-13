@@ -1,0 +1,80 @@
+-----------Shell script-------------------
+- In ra thư mục hiện hành: echo "`pwd`"
+- Tập tin và thư mục kể cả các thư mục ẩn trong thư mục hiện hành: echo "`ls -a`"
+- Ngày và giờ hiện tại: echo "`date`"
+- Lệnh date +%H sẽ in ra giờ hiện tại.
+- Xem dung luong su dung cua may tinh: df
+- Xem noi dung thu muc hien hanh: ls
+- Xem cac tien trinh dang chay tren may tinh duoi dang cay: pstree
+- Xem ten nguoi dung dang nhap he thong: whoami
+=> tạo menu shell thì xem ở ba4.sh tuần 5
+- Viết 1 shell liệt kê tất cả các file và thư mục trong /Desktop: echo  `ls Desktop`
+- Liệt kê tất cả các file có đuôi .sh? : echo `ls *.sh`
+- tạo file có nội dung=> xem bài 6.sh tuần 5
+				-- tuần 6---
+- Tính tổng các chữ số chẵn của số đó: bt3.sh
+- Tìm và in ra chữ số lớn nhất của số đó: bt3a.sh
+- In ra số đảo ngược của số đó: bt3b.sh
+- Kiểm tra xem số đó có phải là số chính phương hay không?: bt3d.sh
+- Kiểm tra xem số đó có phải là số hoàn hảo hay không?: bt3e.sh
+- Đổi tên tất cả các tệp tin có đuôi .doc sang .txt trong thư mục hiện hành:
+  for f in *doc; do
+     mv -- "$f" "${f%.doc}.txt"
+    done
+
+- echo "1. Hiển thị thư mục đang hiện hành và liệt kê các thư mục và tệp tin có trong thư mục đó"
+- echo "2. Hiển thị các tiến trình đang hoạt động"
+- echo "3. Đổi tên tất cả các tệp tin có đuôi .doc sang .txt trong thư mục hiện hành "
+- echo "4. Tìm kiếm và hiển thị các tệp tin/thư mục có tên bắt đầu bằng chuỗi abc trong thư mục hiện hành"
+- echo "5. Tìm kiếm và hiển thị các têp tin/thư mục có chưa ít nhất một chữ số trong thư mục hiện hành"
+- echo "6. Tìm kiếm và hiển thị các tệp tin/thư mục có chưa ít nhất một chữ viết hoa trong thư mục hiện hành"
+- echo "0. Thoát khỏi menu"
+=> xem bafi5.sh ở tuần 7
+
+-------------------Hộp thoại--------tuần 10-----------------
+--- Yes/No---
+#!/bin/bash
+dialog --title "Alert : Delete File" --backtitle "Linux Shell ScriptTutorial" \
+    --yesno "Do you want to delete ‘/usr/letters/jobapplication’ file" 7 60
+sel=$? # Lay ra exit status
+case $sel in
+0) echo "User select to delete file" ;;
+1) echo "User select not to delete file" ;;
+255) echo "Canceled by user by pressing [ESC] key" ;;
+esac
+-----Input------
+#!/bin/bash
+dialog --title "Inputbox - To take input from you" --backtitle "Linux \
+ShellScript Tutorial" --inputbox "Enter your name please" 8 60 \
+    2>input.txt
+sel=$?
+n=$(cat input.txt)
+case $sel in
+0) echo "Hello $n" ;;
+1) echo "Cancel is Press" ;;
+255) echo "[ESCAPE] key pressed" ;;
+esac
+rm -f input.txt
+
+--------Menu---------
+#!/bin/bash
+dialog --title "A dialog Menu Example" \
+    --menu "Vui lòng nhập lựa chọn:" 15 120 5 \
+    4 "Hiển thị thư mục đang làm việc, các tiến trình, người dùng đang đăng nhập, ngày giờ của hệ thống?" \
+    2 "Tìm kiếm và hiển thị các tệp tin/thư mục có tên bắt đầu là “D”và kết thúc là “p” trong thư mục hiện hành?" \
+    3 "Tìm kiếm và hiển thị các tệp tin/thư mục có chứa chữ số trong thư mục hiện hành?" \
+    1 "Nhập vào một mảng, in ra các số nguyên tố trong mảng vừa nhập?" \
+    5 "lua chon khác" 2>bai5.txt
+menuitem=$(cat bai5.txt)
+opt=$?
+case $menuitem in
+1) echo $(pwd) echo $(ps) echo $(whoami) echo $(date) ;;
+2) chooseTwo ;;
+3) chooseThree ;;
+4) echo $(pwd) echo $(ps) echo $(whoami) echo $(date) ;;
+5) exit ;;
+esac
+
+------------infor----------
+#!/bin/bash
+dialog --title "Bai 1" --backtitle "Linux" --infobox "tong cua 2 so la 66" 7 50
