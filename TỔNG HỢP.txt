@@ -74,7 +74,22 @@ case $menuitem in
 4) echo $(pwd) echo $(ps) echo $(whoami) echo $(date) ;;
 5) exit ;;
 esac
-
+---------------awk--------------
+*length(string): trả về chiều dài của chuỗi.
+*index(string, search_string): Trả về vị trí mà search_string được tìm thấy trong string.
+*split(string,array,delimiter): lưu trữ 1 danh sách các chuỗi được tạo bằng việc sử dụng dấu 
+phân cách trong mảng.
+*substr(string, start-position, end-position): Trả về chuỗi con được tạo từ chuỗi có nội dung từ 
+vị trí bắt đầu (start-position) đến vị trị kết thức (end-position).
+*sub(regex, replacement_str, string): Thay thế chuỗi đầu tiên trùng khớp với biểu thức chính quy
+ (regex) bằng chuỗi thay thế (replacement_str).
+*gsub(regex, replacement_str, string): Tương tự với hàm sub(), nhưng nó thay thế mọi trường hợp 
+trùng khớp với biểu thức chính quy (regex).
+*match(regex, string): Trả về kết quả là 1 chuỗi trùng khớp với biểu thức chính quy (regex) có được
+ tìm thấy trong string hay không. Nó trả về kết quả khác 0 nếu có trùng khớp,
+ ngược lại thì trả về 0. 2 biến đặc biệt tương ứng với hàm match() là RSTART và RLENGTH. 
+Biến RSTART chứa vị trí nơi chuỗi trùng khớp bắt đầu. 
+Biến RLENGTH chứa độ dài của chuỗi trùng khớp với biểu thức chính quy.
 ------------infor----------
 #!/bin/bash
 dialog --title "Bai 1" --backtitle "Linux" --infobox "tong cua 2 so la 66" 7 50
