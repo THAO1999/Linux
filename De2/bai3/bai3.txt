@@ -1,0 +1,13 @@
+#!/bin/bash 
+#cau 1
+sed  's/^$/---------------------/g' bai3.txt > output1.txt
+
+#cau 2
+sed -n '/ThaiBinh/p' bai3.txt > output2.txt
+
+#cau 3
+sed -n '1,4 p' bai3.txt > output3.txt
+
+#cau 4
+sed -i "3 i PhamThanhTung 17001741 NamDinh 04/03/1999 8 8 8" bai3.txt > output4.txt
+
