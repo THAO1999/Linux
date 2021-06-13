@@ -74,6 +74,10 @@ case $menuitem in
 4) echo $(pwd) echo $(ps) echo $(whoami) echo $(date) ;;
 5) exit ;;
 esac
+------------infor----------
+#!/bin/bash
+dialog --title "Bai 1" --backtitle "Linux" --infobox "tong cua 2 so la 66" 7 50
+
 ---------------awk--------------
 *length(string): trả về chiều dài của chuỗi.
 *index(string, search_string): Trả về vị trí mà search_string được tìm thấy trong string.
@@ -90,6 +94,13 @@ trùng khớp với biểu thức chính quy (regex).
  ngược lại thì trả về 0. 2 biến đặc biệt tương ứng với hàm match() là RSTART và RLENGTH. 
 Biến RSTART chứa vị trí nơi chuỗi trùng khớp bắt đầu. 
 Biến RLENGTH chứa độ dài của chuỗi trùng khớp với biểu thức chính quy.
-------------infor----------
-#!/bin/bash
-dialog --title "Bai 1" --backtitle "Linux" --infobox "tong cua 2 so la 66" 7 50
+
+
+-------------------------------SED--------------------------------
+- xoá dòng trống: sed '/^$/d' example.txt
+- thêm vào cuối: sed -i '$a Pham Van A, 31/2/1990, travel, Hanoi ' sed.txt'
+- thêm vào vị trí bất kì và ghi ra file: 
+ sed  "7i\ TTTTT 17000245 BG   " bai3.txt >output4.txt
+- Thay thế tất cả những người có họ Nguyen và tên Huong bằng NguyenLan rồi
+ghi ra tệp out5.txt : 5.sed 's/^Nguyen[^Huong]*Huong/NguyenLan/' bai3.txt >out5.txt
+- Tìm kiếm tất cả những người sinh tháng 1 ghi ra tệp out3.txt: sed '/\/01\//!d' bai3.txt >out3.txt 01/01/97

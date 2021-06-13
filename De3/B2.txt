@@ -1,0 +1,15 @@
+total 58
+drwxrwxrwx 1 thaotm thaotm   512 Jun 13 16:10 De1
+-rwxrwxrwx 1 thaotm thaotm 57007 Oct 29  2018 De2.pdf
+-rwxrwxrwx 1 thaotm thaotm   716 Oct 29  2018 b1.sh
+-rwxrwxrwx 1 thaotm thaotm   571 Oct 29  2018 b2.awk
+-rwxrwxrwx 1 thaotm thaotm   309 Oct 29  2018 b2.awk~
+-rwxrwxrwx 1 thaotm thaotm   310 Oct 29  2018 b3.txt
+-rwxrwxrwx 1 thaotm thaotm    32 Oct 29  2018 b3.txt~
+-rwxrwxrwx 1 thaotm thaotm   257 Oct 29  2018 bai3.txt
+-rwxrwxrwx 1 thaotm thaotm   254 Oct 29  2018 out1.txt
+-rwxrwxrwx 1 thaotm thaotm   256 Oct 29  2018 out2.txt
+-rwxrwxrwx 1 thaotm thaotm    82 Jun 13 17:08 out3.txt
+-rwxrwxrwx 1 thaotm thaotm    91 Oct 29  2018 out4.txt
+-rwxrwxrwx 1 thaotm thaotm   252 Jun 13 17:04 out5.txt
+-rwxrwxrwx 1 thaotm thaotm   323 Jun 13 16:53 out6.txt
