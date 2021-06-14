@@ -99,6 +99,7 @@ Biến RLENGTH chứa độ dài của chuỗi trùng khớp với biểu thức
 -------------------------------SED--------------------------------
 - xoá dòng trống: sed '/^$/d' example.txt
 - thêm vào cuối: sed -i '$a Pham Van A, 31/2/1990, travel, Hanoi ' sed.txt'
+- thêm vào dòng cuối và in ra file mới: sed '$a Pham Van A, 31/2/1990, travel, Hanoi ' bai2.txt>t.txt
 - thêm vào vị trí bất kì và ghi ra file: 
  sed  "7i\ TTTTT 17000245 BG   " bai3.txt >output4.txt
 - Thay thế tất cả những người có họ Nguyen và tên Huong bằng NguyenLan rồi

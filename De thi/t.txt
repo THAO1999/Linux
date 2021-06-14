@@ -1,0 +1,9 @@
+NguyenVanNam	Nam 	7	9	4       0
+DaoHaTHu	Nu 	5	6	2       1
+DuLanAnh	Nu 	9	9	5	1	
+TranVanBinh	Nam	9	9	5	1
+NguyenThiHuong	Nam	9	9	5	1
+Pham Van A, 31/2/1990, travel, Hanoi 
+Pham Van A, 31/2/1990, travel, Hanoi 
+Pham Van A, 31/2/1990, travel, Hanoi 
+Pham Van A, 31/2/1990, travel, Hanoi 
