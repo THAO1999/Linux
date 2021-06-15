@@ -13,10 +13,8 @@ BEGIN{
     }
 }
 END{
-	print "Tep tin kich thuoc > 100 la:"
-    for(i in file)
-	printf i ", "
-    print ""
+	print "Tep tin kich thuoc < 100 KB la:"
+    find / -size 100k 
     print "So tep quyen so huu rwxr-xr-x la " a
     
 }
